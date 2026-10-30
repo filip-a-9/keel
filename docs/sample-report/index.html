@@ -82,6 +82,7 @@ svg .dot:not(.wide) { stroke: #ffffff; }
 .chart-key { font-size: 12px; color: var(--ink-2); }
 ul { margin: 6px 0; padding-left: 20px; }
 section { break-inside: auto; }
+.sample-badge { display: inline-block; background: var(--accent); color: var(--surface); font-size: 11px; font-weight: 700; letter-spacing: .04em; padding: 1px 8px; border-radius: 999px; vertical-align: middle; }
 </style>
 </head>
 <body>
@@ -91,99 +92,164 @@ section { break-inside: auto; }
 <header class="top">
   <div class="title">
     <h1>AI visibility report</h1>
-    <div class="muted">Teamwork.com &middot; 2026-10-30</div>
+    <div class="muted">Teamwork.com <strong class="sample-badge">SAMPLE</strong> &middot; 2026-10-30</div>
   </div>
 </header>
+<div class="warn sample-banner">
+  <strong>Sample report</strong>
+  <p>Real answers from the OpenAI API (gpt-5.6-luna) with web search, October 2026, not ChatGPT app answers. Prompts chosen by us, not by the brand. Counts &#39;Teamwork.com&#39; only, so a bare &#39;Teamwork&#39; is not counted and its rates are understated.</p>
+  <p>Independent study. Not commissioned by or affiliated with Teamwork.com.</p>
+</div>
 
 
 <div class="warn">
   <strong>Notes on this report</strong>
   <ul>
-    <li>6 intents; use 10 to 25</li>
+    <li>Real answers from the OpenAI API (gpt-5.6-luna) with web search, October 2026, not ChatGPT app answers. Prompts chosen by us, not by the brand. Counts &#39;Teamwork.com&#39; only, so a bare &#39;Teamwork&#39; is not counted and its rates are understated.</li>
+    <li>Independent study. Not commissioned by or affiliated with Teamwork.com.</li>
   </ul>
 </div>
 
 <section id="summary">
-<h2>1. Summary</h2>
+<h2>1. Summary <span class="sample-badge">SAMPLE</span></h2>
 <p>
-  <strong>Teamwork.com</strong> was mentioned in about 4 in 5 answers; likely between 2 in 3 and 19 in 20.
+  <strong>Against its competitors on each question theme, Teamwork.com
+  is ahead on 0, behind on 1, and shows no clear difference
+  on 5 (of 6 themes).</strong>
 </p>
 <p>
-  Overall mention rate: <strong>83%</strong>
-  &middot; n=280 answers &middot; 95% interval 59%–96%
-  &middot; 6 intents
-  <br><strong>few intents, interval unreliable</strong>
+  Overall, Teamwork.com was mentioned in about 83% of answers (likely 59%–96%),
+  across 6 question themes.
+  The range is wide because this average rests on only 6 themes,
+  however many answers each had.
 </p>
 <table>
-  <tr><th>Brand</th><th>Mentioned</th><th class="num">Rate &middot; n &middot; 95% interval</th></tr>
-  <tr class="mine"><td>Teamwork.com</td><td>in about 4 in 5 answers; likely between 2 in 3 and 19 in 20</td>
-    <td class="num">83% &middot; n=280 &middot; 59%–96%</td></tr>
-  <tr><td>Asana</td><td>in about 4 in 5 answers; likely between 2 in 3 and 99 in 100</td>
-    <td class="num">82% &middot; n=280 &middot; 64%–98%</td></tr>
-  <tr><td>monday.com</td><td>in about 3 in 4 answers; likely between 1 in 2 and 9 in 10</td>
-    <td class="num">72% &middot; n=280 &middot; 49%–91%</td></tr>
-  <tr><td>ClickUp</td><td>in about 4 in 5 answers; likely between 1 in 2 and 99 in 100</td>
-    <td class="num">84% &middot; n=280 &middot; 58%–100%</td></tr>
-  <tr><td>Trello</td><td>in about 1 in 5 answers; likely between 1 in 20 and 1 in 2</td>
-    <td class="num">22% &middot; n=280 &middot; 7.1%–45%</td></tr>
-  <tr><td>Notion</td><td>in about 1 in 8 answers; likely between 1 in 100 and 1 in 3</td>
-    <td class="num">12% &middot; n=280 &middot; 0.8%–32%</td></tr>
+  <tr><th>Brand</th><th>Mentioned</th></tr>
+  <tr class="mine"><td>Teamwork.com</td><td>in about 83% of answers (likely 59%–96%)</td></tr>
+  <tr><td>Asana</td><td>in about 82% of answers (likely 64%–98%)</td></tr>
+  <tr><td>monday.com</td><td>in about 72% of answers (likely 49%–91%)</td></tr>
+  <tr><td>ClickUp</td><td>in about 84% of answers (likely 58%–100%)</td></tr>
+  <tr><td>Trello</td><td>in about 22% of answers (likely 7.1%–45%)</td></tr>
+  <tr><td>Notion</td><td>in about 12% of answers (likely 0.8%–32%)</td></tr>
 </table>
 <p>280 answers, from 2026-10-30 to 2026-10-30.</p>
-<p>The target precision (95% interval within &plusmn;10 points) was reached for every intent.</p>
+<p>The target precision (95% interval within &plusmn;10 points) was reached for every question theme.</p>
+</section>
+
+<section id="findings">
+<h2>2. Findings <span class="sample-badge">SAMPLE</span></h2>
+<p class="note">A competitor is clearly ahead when its 95% interval sits entirely above Teamwork.com&rsquo;s. Each question theme below has at least one. Themes are ordered by the distance between the rates, largest first.</p>
+<h3>Which tool is best for resource planning and team workload management?</h3>
+<p>Teamwork.com: 25% &middot; n=80 &middot; 17%–35%. Clearly ahead:</p>
+<ul>
+  <li>Asana: 85% &middot; n=80 &middot; 76%–91%</li>
+  <li>monday.com: 68% &middot; n=80 &middot; 57%–77% (wide)</li>
+</ul>
+<table>
+  <tr><th>Teamwork.com pages cited in answers to this question theme</th><th class="num">Answers citing it</th></tr>
+  <tr><td class="url">https://www.teamwork.com/blog/resource-planning-tools</td><td class="num">5</td></tr>
+  <tr><td class="url">https://support.teamwork.com/projects/schedule/schedule-introduction</td><td class="num">3</td></tr>
+  <tr><td class="url">https://support.teamwork.com/projects/workload/workload-planner-overview</td><td class="num">1</td></tr>
+  <tr><td class="url">https://www.teamwork.com/blog/workload-planning</td><td class="num">1</td></tr>
+</table>
+<table>
+  <tr><th>Other sites cited in answers that name a leader but not Teamwork.com</th><th class="num">Answers citing it</th></tr>
+  <tr><td>smartsheet.com</td><td class="num">48 of 59</td></tr>
+  <tr><td>float.com</td><td class="num">25 of 59</td></tr>
+  <tr><td>wrike.com</td><td class="num">10 of 59</td></tr>
+  <tr><td>ones.com</td><td class="num">5 of 59</td></tr>
+  <tr><td>softwarecompare.net</td><td class="num">5 of 59</td></tr>
+</table>
+<p class="note">and 14 more</p>
 </section>
 
 <section id="by-intent">
-<h2>2. By intent</h2>
-<p class="note">Intents are sorted by mention rate. The dot is the rate and the whisker is its 95% interval. A hollow dot marked &ldquo;wide&rdquo; did not reach the target precision.</p>
+<h2>3. By question theme <span class="sample-badge">SAMPLE</span></h2>
+<p class="note">Question themes are sorted by mention rate. The dot is the rate and the whisker is its 95% interval. A hollow dot marked &ldquo;wide&rdquo; did not reach the target precision.</p>
 <figure>
-<svg viewBox="0 0 720 170" role="img" aria-label="Mention rate by intent, with 95% intervals" class="chart"><title>Mention rate by intent, with 95% intervals</title><line class="grid" x1="215.0" x2="215.0" y1="16" y2="166"/><text class="axis" x="215.0" y="12" text-anchor="middle">0%</text><line class="grid" x1="277.5" x2="277.5" y1="16" y2="166"/><text class="axis" x="277.5" y="12" text-anchor="middle">25%</text><line class="grid" x1="340.0" x2="340.0" y1="16" y2="166"/><text class="axis" x="340.0" y="12" text-anchor="middle">50%</text><line class="grid" x1="402.5" x2="402.5" y1="16" y2="166"/><text class="axis" x="402.5" y="12" text-anchor="middle">75%</text><line class="grid" x1="465.0" x2="465.0" y1="16" y2="166"/><text class="axis" x="465.0" y="12" text-anchor="middle">100%</text><g><title>What is the best project management software for a marketing or creative agency?: 98% · n=40 · 87%–100%</title><text class="label" x="8" y="38.0">What is the best project mana…</text><line class="whisker" x1="432.8" x2="463.9" y1="34.0" y2="34.0" stroke="#2a78d6"/><circle class="dot" cx="458.8" cy="34.0" r="5" stroke="#2a78d6" fill="#2a78d6"/><text class="value" x="480" y="38.0">98% · n=40 · 87%–100%</text></g><g><title>What are the best alternatives to Asana for agencies?: 98% · n=40 · 87%–100%</title><text class="label" x="8" y="62.0">What are the best alternative…</text><line class="whisker" x1="432.8" x2="463.9" y1="58.0" y2="58.0" stroke="#2a78d6"/><circle class="dot" cx="458.8" cy="58.0" r="5" stroke="#2a78d6" fill="#2a78d6"/><text class="value" x="480" y="62.0">98% · n=40 · 87%–100%</text></g><g><title>What is the best project management app for a small services business?: 95% · n=40 · 83%–99%</title><text class="label" x="8" y="86.0">What is the best project mana…</text><line class="whisker" x1="423.7" x2="461.5" y1="82.0" y2="82.0" stroke="#2a78d6"/><circle class="dot" cx="452.5" cy="82.0" r="5" stroke="#2a78d6" fill="#2a78d6"/><text class="value" x="480" y="86.0">95% · n=40 · 83%–99%</text></g><g><title>What project management software has built-in time tracking and budgeting?: 92% · n=40 · 80%–97%</title><text class="label" x="8" y="110.0">What project management softw…</text><line class="whisker" x1="415.3" x2="458.5" y1="106.0" y2="106.0" stroke="#2a78d6"/><circle class="dot" cx="446.2" cy="106.0" r="5" stroke="#2a78d6" fill="#2a78d6"/><text class="value" x="480" y="110.0">92% · n=40 · 80%–97%</text></g><g><title>Which project management tool is best for managing client projects and billable hours?: 90% · n=40 · 77%–96%</title><text class="label" x="8" y="134.0">Which project management tool…</text><line class="whisker" x1="407.4" x2="455.1" y1="130.0" y2="130.0" stroke="#2a78d6"/><circle class="dot" cx="440.0" cy="130.0" r="5" stroke="#2a78d6" fill="#2a78d6"/><text class="value" x="480" y="134.0">90% · n=40 · 77%–96%</text></g><g><title>Which tool is best for resource planning and team workload management?: 25% · n=80 · 17%–35%</title><text class="label" x="8" y="158.0">Which tool is best for resour…</text><line class="whisker" x1="257.0" x2="303.7" y1="154.0" y2="154.0" stroke="#2a78d6"/><circle class="dot" cx="277.5" cy="154.0" r="5" stroke="#2a78d6" fill="#2a78d6"/><text class="value" x="480" y="158.0">25% · n=80 · 17%–35%</text></g></svg>
+<svg viewBox="0 0 720 170" role="img" aria-label="Mention rate by question theme, with 95% intervals" class="chart"><title>Mention rate by question theme, with 95% intervals</title><line class="grid" x1="215.0" x2="215.0" y1="16" y2="166"/><text class="axis" x="215.0" y="12" text-anchor="middle">0%</text><line class="grid" x1="277.5" x2="277.5" y1="16" y2="166"/><text class="axis" x="277.5" y="12" text-anchor="middle">25%</text><line class="grid" x1="340.0" x2="340.0" y1="16" y2="166"/><text class="axis" x="340.0" y="12" text-anchor="middle">50%</text><line class="grid" x1="402.5" x2="402.5" y1="16" y2="166"/><text class="axis" x="402.5" y="12" text-anchor="middle">75%</text><line class="grid" x1="465.0" x2="465.0" y1="16" y2="166"/><text class="axis" x="465.0" y="12" text-anchor="middle">100%</text><g><title>What is the best project management software for a marketing or creative agency?: 98% · n=40 · 87%–100%</title><text class="label" x="8" y="38.0">What is the best project mana…</text><line class="whisker" x1="432.8" x2="463.9" y1="34.0" y2="34.0" stroke="#2a78d6"/><circle class="dot" cx="458.8" cy="34.0" r="5" stroke="#2a78d6" fill="#2a78d6"/><text class="value" x="480" y="38.0">98% · n=40 · 87%–100%</text></g><g><title>What are the best alternatives to Asana for agencies?: 98% · n=40 · 87%–100%</title><text class="label" x="8" y="62.0">What are the best alternative…</text><line class="whisker" x1="432.8" x2="463.9" y1="58.0" y2="58.0" stroke="#2a78d6"/><circle class="dot" cx="458.8" cy="58.0" r="5" stroke="#2a78d6" fill="#2a78d6"/><text class="value" x="480" y="62.0">98% · n=40 · 87%–100%</text></g><g><title>What is the best project management app for a small services business?: 95% · n=40 · 83%–99%</title><text class="label" x="8" y="86.0">What is the best project mana…</text><line class="whisker" x1="423.7" x2="461.5" y1="82.0" y2="82.0" stroke="#2a78d6"/><circle class="dot" cx="452.5" cy="82.0" r="5" stroke="#2a78d6" fill="#2a78d6"/><text class="value" x="480" y="86.0">95% · n=40 · 83%–99%</text></g><g><title>What project management software has built-in time tracking and budgeting?: 92% · n=40 · 80%–97%</title><text class="label" x="8" y="110.0">What project management softw…</text><line class="whisker" x1="415.3" x2="458.5" y1="106.0" y2="106.0" stroke="#2a78d6"/><circle class="dot" cx="446.2" cy="106.0" r="5" stroke="#2a78d6" fill="#2a78d6"/><text class="value" x="480" y="110.0">92% · n=40 · 80%–97%</text></g><g><title>Which project management tool is best for managing client projects and billable hours?: 90% · n=40 · 77%–96%</title><text class="label" x="8" y="134.0">Which project management tool…</text><line class="whisker" x1="407.4" x2="455.1" y1="130.0" y2="130.0" stroke="#2a78d6"/><circle class="dot" cx="440.0" cy="130.0" r="5" stroke="#2a78d6" fill="#2a78d6"/><text class="value" x="480" y="134.0">90% · n=40 · 77%–96%</text></g><g><title>Which tool is best for resource planning and team workload management?: 25% · n=80 · 17%–35%</title><text class="label" x="8" y="158.0">Which tool is best for resour…</text><line class="whisker" x1="257.0" x2="303.7" y1="154.0" y2="154.0" stroke="#2a78d6"/><circle class="dot" cx="277.5" cy="154.0" r="5" stroke="#2a78d6" fill="#2a78d6"/><text class="value" x="480" y="158.0">25% · n=80 · 17%–35%</text></g></svg>
 </figure>
 <table>
-  <tr><th>Intent</th><th class="num">Rate &middot; n &middot; 95% interval</th><th class="num">Range across phrasings</th><th></th></tr>
+  <tr><th>Question theme</th><th class="num">Rate &middot; n &middot; 95% interval</th><th class="num">Range across phrasings</th><th></th></tr>
   <tr>
-    <td>What is the best project management software for a marketing or creative agency?</td>
+    <td>What is the best project management software for a marketing or creative agency?
+      <ul class="note">
+        <li>What project management software works best for a marketing or creative agency?</li>
+        <li>Which project management tool should a marketing or creative agency use?</li>
+        <li>What’s the top project management solution for managing work at a marketing or creative agency?</li>
+      </ul>
+    </td>
     <td class="num">98% &middot; n=40 &middot; 87%–100%</td>
     <td class="num">90%&ndash;100%</td>
     <td></td>
   </tr>
   <tr>
-    <td>What are the best alternatives to Asana for agencies?</td>
+    <td>What are the best alternatives to Asana for agencies?
+      <ul class="note">
+        <li>What are the best project management tools for agencies besides Asana?</li>
+        <li>Which Asana alternatives work best for managing agency projects and clients?</li>
+        <li>What other platforms can agencies use instead of Asana?</li>
+      </ul>
+    </td>
     <td class="num">98% &middot; n=40 &middot; 87%–100%</td>
     <td class="num">90%&ndash;100%</td>
     <td></td>
   </tr>
   <tr>
-    <td>What is the best project management app for a small services business?</td>
+    <td>What is the best project management app for a small services business?
+      <ul class="note">
+        <li>What project management software is best for a small service-based business?</li>
+        <li>Which project management app would work best for a small business that provides services?</li>
+        <li>What’s the top project management tool for managing projects in a small services company?</li>
+      </ul>
+    </td>
     <td class="num">95% &middot; n=40 &middot; 83%–99%</td>
     <td class="num">90%&ndash;100%</td>
     <td></td>
   </tr>
   <tr>
-    <td>What project management software has built-in time tracking and budgeting?</td>
+    <td>What project management software has built-in time tracking and budgeting?
+      <ul class="note">
+        <li>Which project management tools include built-in time tracking and budgeting?</li>
+        <li>What project management software offers both time tracking and budget management features?</li>
+        <li>Are there project management platforms with integrated time tracking and budgeting?</li>
+      </ul>
+    </td>
     <td class="num">92% &middot; n=40 &middot; 80%–97%</td>
     <td class="num">80%&ndash;100%</td>
     <td></td>
   </tr>
   <tr>
-    <td>Which project management tool is best for managing client projects and billable hours?</td>
+    <td>Which project management tool is best for managing client projects and billable hours?
+      <ul class="note">
+        <li>What’s the best project management software for handling client projects and tracking billable hours?</li>
+        <li>Which tool is best for managing client work and recording billable time?</li>
+        <li>What project management platform should I use to organize client projects and track hours for billing?</li>
+      </ul>
+    </td>
     <td class="num">90% &middot; n=40 &middot; 77%–96%</td>
     <td class="num">60%&ndash;100%</td>
     <td></td>
   </tr>
   <tr>
-    <td>Which tool is best for resource planning and team workload management?</td>
+    <td>Which tool is best for resource planning and team workload management?
+      <ul class="note">
+        <li>What’s the best tool for planning resources and managing team workloads?</li>
+        <li>Which software is best for resource allocation and balancing team workloads?</li>
+        <li>What tool should I use to plan resources and keep track of my team’s workload?</li>
+      </ul>
+    </td>
     <td class="num">25% &middot; n=80 &middot; 17%–35%</td>
     <td class="num">20%&ndash;30%</td>
     <td></td>
   </tr>
 </table>
-<p class="note">Wording often matters more than repetition, so the range shows the lowest and highest mention rate among the phrasings of each intent. It is descriptive only: each phrasing alone has too few answers for an interval of its own.</p>
+<p class="note">Wording often matters more than repetition, so the range shows the lowest and highest mention rate among the phrasings of each theme. It is descriptive only: each phrasing alone has too few answers for an interval of its own.</p>
 </section>
 
 <section id="competitors">
-<h2>3. Competitors by intent</h2>
-<p class="note">One chart per intent: the client and up to 5 competitors, same scale. The dot is the rate and the whisker is its 95% interval.</p>
+<h2>4. Competitors by question theme <span class="sample-badge">SAMPLE</span></h2>
+<p class="note">One chart per question theme: the brand and up to 5 competitors, same scale. The dot is the rate and the whisker is its 95% interval.</p>
 <div class="legend">
   <span><span class="swatch" style="background: #2a78d6"></span>Teamwork.com</span>
   <span><span class="swatch" style="background: #eb6834"></span>Asana</span>
@@ -219,7 +285,7 @@ section { break-inside: auto; }
 </section>
 
 <section id="cited">
-<h2>4. Cited pages</h2>
+<h2>5. Cited pages <span class="sample-badge">SAMPLE</span></h2>
 <p>Answers that cite Teamwork.com: 135 of 280
   (48% (n=280, 42%–54%)).</p>
 <h3>Teamwork.com pages cited</h3>
@@ -260,7 +326,7 @@ section { break-inside: auto; }
   <tr><th>Domain</th><th class="num">Answers citing it (of 280)</th><th></th></tr>
   <tr class="mine">
     <td>teamwork.com</td><td class="num">135</td>
-    <td>client</td>
+    <td>brand</td>
   </tr>
   <tr>
     <td>clickup.com</td><td class="num">89</td>
@@ -320,7 +386,7 @@ section { break-inside: auto; }
   </tr>
 </table>
 <h3>Where to get coverage</h3>
-<p>Third-party sites cited in answers, subdomains merged. Not the client and not a
+<p>Third-party sites cited in answers, subdomains merged. Not the brand and not a
   listed competitor.</p>
 <table>
   <tr><th>Domain</th><th class="num">Answers citing it (of 280)</th></tr>
@@ -340,11 +406,11 @@ section { break-inside: auto; }
   <tr><td>paymoapp.com</td><td class="num">8</td></tr>
   <tr><td>thedigitalprojectmanager.com</td><td class="num">8</td></tr>
 </table>
-<h3>Frequently cited domains outside the client file</h3>
-<p>Domains cited in at least 10% of answers that are not the client or a listed
+<h3>Frequently cited domains outside the listed brands</h3>
+<p>Domains cited in at least 10% of answers that are not the brand or a listed
   competitor. Some may be brands worth tracking and some are publishers; the tool
-  cannot tell which. Detection and every rate above stay limited to the brands in
-  the client file.</p>
+  cannot tell which. Detection and every rate above stay limited to
+  the listed brands.</p>
 <table>
   <tr><th>Domain</th><th class="num">Answers citing it (of 280)</th></tr>
   <tr><td>smartsheet.com</td><td class="num">76</td></tr>
@@ -357,43 +423,13 @@ section { break-inside: auto; }
 <p class="note">An answer that cites a page or domain more than once counts once.</p>
 </section>
 
-<section id="traffic">
-<h2>5. AI-referral traffic (GA4)</h2>
-<p class="skipped">Not included: no traffic.json in the client folder; run `audit traffic`.</p>
-<h3>Limits of this data</h3>
-<ul>
-  <li>Google AI Overviews and AI Mode clicks are inside Organic Search and cannot be separated.</li>
-  <li>App clicks often arrive with no referrer and land in Direct.</li>
-  <li>Assistants outside the source pattern (for example Deepseek or Grok) may be missed.</li>
-  <li>These are visits, not visibility.</li>
-</ul>
-</section>
-
-<section id="search-reports">
-<h2>6. Google and Bing AI reports</h2>
-<h3>Google Search Console: Generative AI report</h3>
-<p class="skipped">Not included: no gsc_ai.csv in the client folder.</p>
-<h3>Bing: AI Performance report</h3>
-<p class="skipped">Not included: no bing_ai.csv in the client folder.</p>
-</section>
-
-<section id="spotcheck">
-<h2>7. ChatGPT app spot-check</h2>
-<p class="skipped">Not included: no files in the spotcheck folder.</p>
-</section>
-
-<section id="toolcheck">
-<h2>8. Your current tool's numbers</h2>
-<p class="skipped">Not included: no toolcheck.csv in the client folder.</p>
-</section>
-
 <section id="method">
-<h2>9. Method and limits</h2>
+<h2>6. Method and limits <span class="sample-badge">SAMPLE</span></h2>
 <ul>
   <li>Model as returned: gpt-5.6-luna. Requested: gpt-5.6-luna.</li>
   <li>Search tool: web_search. Location: US. Language: en.</li>
-  <li>Answers collected 2026-10-30 to 2026-10-30: 24 prompts, 6 intents, 280 usable answers (0 failed, 0 excluded).</li>
-  <li>Stopping rule: at least 10 runs per prompt, then 10 more at a time while an intent's 95% interval is wider than &plusmn;10 points, up to 100 runs per prompt. A round stops early if more than 10% of its calls fail.</li>
+  <li>Answers collected 2026-10-30 to 2026-10-30: 24 prompts, 6 question themes, 280 usable answers (0 failed, 0 excluded).</li>
+  <li>Stopping rule: at least 10 runs per prompt, then 10 more at a time while a question theme's 95% interval is wider than &plusmn;10 points, up to 100 runs per prompt. A round stops early if more than 10% of its calls fail.</li>
   <li>Prices used: $0.20 per million input tokens, $1.20 per million output tokens, $0.01 per search. Total cost, failed and excluded calls included: $4.19.</li>
   <li>Of 280 usable answers, 280 used the web search tool at least once (100% (n=280, 99%–100%)); the others were answered without searching.</li>
 </ul>
@@ -406,6 +442,8 @@ section { break-inside: auto; }
   <li>First-party data shows visits, not visibility.</li>
 </ul>
 </section>
+
+<p class="skipped not-covered">Not part of this study: AI-referral traffic, Google and Bing AI reports, ChatGPT app spot-check, current tool&#39;s numbers.</p>
 </main>
 </body>
 </html>
