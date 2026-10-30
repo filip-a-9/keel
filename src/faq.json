@@ -1,0 +1,62 @@
+[
+ {
+  "q": "How is this different from asking ChatGPT about my brand myself?",
+  "a_html": "One answer is one draw from a varying process. The audit asks each question in several wordings, many times, and reports a mention rate with a 95% confidence interval. See <a href=\"/articles/why-one-chatgpt-screenshot-proves-nothing/\">why one screenshot proves nothing</a>."
+ },
+ {
+  "q": "Is this the same as what customers see in the ChatGPT app?",
+  "a_html": "No. Answers come from the ChatGPT API with web search and, for the Full audit, from Claude through Claude Code's web search. They are not taken from the consumer ChatGPT app or claude.ai and may differ from what an individual user sees."
+ },
+ {
+  "q": "Do you guarantee rankings or more mentions?",
+  "a_html": "No. The audit measures where you stand and what the assistants cite. It does not change what they say, and nothing on this site promises a ranking or traffic."
+ },
+ {
+  "q": "How do you decide whether my brand was mentioned?",
+  "a_html": "Deterministic matching of the brand name, agreed aliases and domains in the answer text. No model judges the answers. See the <a href=\"/method/\">method</a>."
+ },
+ {
+  "q": "How many answers are collected?",
+  "a_html": "It varies by theme. Sampling continues until each theme's mention rate is within about ±10 percentage points, so stable themes need fewer answers than mixed ones. The Teamwork.com study used 280 answers across 6 themes."
+ },
+ {
+  "q": "What is the difference between Snapshot and Full?",
+  "a_html": "Snapshot (£249) covers ChatGPT and 6 question themes, delivered in 5 working days. Full (£749) covers ChatGPT and Claude, 10 to 15 themes, with findings and recommended actions, delivered in 7 working days. See the <a href=\"/offer/\">offer</a>."
+ },
+ {
+  "q": "What do I receive?",
+  "a_html": "An HTML report and a PDF, sent by email. There is no login or dashboard."
+ },
+ {
+  "q": "How do I order and pay?",
+  "a_html": "Email the 8-question intake (brand, aliases, domains, competitors, country, buyer questions, pages to be cited and tier). After we confirm the order, we email a Payoneer payment request in GBP. The full amount is paid up front and work starts when it arrives. See <a href=\"/order/\">how to order</a>."
+ },
+ {
+  "q": "What is the founding-customer offer?",
+  "a_html": "The first 3 customers get 40% off: Snapshot £149 and Full £449. In exchange, they give permission to publish an anonymised case study. It is limited to the first 3 customers. See the <a href=\"/offer/\">offer</a>."
+ },
+ {
+  "q": "What about revisions and refunds?",
+  "a_html": "One round of revisions to the report text and question themes is included. You get a full refund if you cancel before answer collection starts. There is no refund once answers have been collected. See the <a href=\"/terms/\">terms</a>."
+ },
+ {
+  "q": "Is it a subscription?",
+  "a_html": "No. Both audits are one-off. Results are a snapshot, and you can order again later to see what changed."
+ },
+ {
+  "q": "Who is behind Keel?",
+  "a_html": "Keel AI Visibility is an independent service, just starting out, so there are no client logos or testimonials here yet. The worked example is an independent study of a public company."
+ },
+ {
+  "q": "Is the Teamwork.com study endorsed by Teamwork.com?",
+  "a_html": "No. It is an independent study, not commissioned by or affiliated with Teamwork.com. See the <a href=\"/case-study/\">case study</a>."
+ },
+ {
+  "q": "Is white label included?",
+  "a_html": "Yes, at no extra cost. Agencies can have their own agency name in the report header, and Keel is not mentioned in the report. See <a href=\"/articles/white-label-ai-visibility-audits-for-agencies/\">white-label audits for agencies</a>."
+ },
+ {
+  "q": "What data do you keep, and does this site track me?",
+  "a_html": "The site sets no cookies and uses no analytics. Emails are used only to reply and run your audit. See the <a href=\"/privacy/\">privacy page</a>."
+ }
+]

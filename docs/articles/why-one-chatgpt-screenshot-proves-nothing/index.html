@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One ChatGPT screenshot proves nothing | Keel AI Visibility</title>
+<meta name="description" content="A single AI answer is one random draw. See how variance, wording and sample size change the result, and how confidence intervals show what you can conclude.">
+<link rel="canonical" href="https://filip-a-9.github.io/keel/articles/why-one-chatgpt-screenshot-proves-nothing/">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../assets/fonts/fraunces-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/style.css">
+<meta property="og:site_name" content="Keel AI Visibility">
+<meta property="og:locale" content="en_GB">
+<meta property="og:type" content="article">
+<meta property="og:title" content="One ChatGPT screenshot proves nothing | Keel AI Visibility">
+<meta property="og:description" content="A single AI answer is one random draw. See how variance, wording and sample size change the result, and how confidence intervals show what you can conclude.">
+<meta property="og:url" content="https://filip-a-9.github.io/keel/articles/why-one-chatgpt-screenshot-proves-nothing/">
+<meta property="og:image" content="https://filip-a-9.github.io/keel/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Keel AI Visibility: does ChatGPT recommend your brand? Measured, not guessed.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="One ChatGPT screenshot proves nothing | Keel AI Visibility">
+<meta name="twitter:description" content="A single AI answer is one random draw. See how variance, wording and sample size change the result, and how confidence intervals show what you can conclude.">
+<meta name="twitter:image" content="https://filip-a-9.github.io/keel/assets/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Why one ChatGPT screenshot proves nothing",
+  "description": "A single AI answer is one random draw. See how variance, wording and sample size change the result, and how confidence intervals show what you can conclude.",
+  "datePublished": "2026-10-30",
+  "dateModified": "2026-10-30",
+  "inLanguage": "en-GB",
+  "mainEntityOfPage": "https://filip-a-9.github.io/keel/articles/why-one-chatgpt-screenshot-proves-nothing/",
+  "author": {
+    "@type": "Organization",
+    "name": "Keel AI Visibility",
+    "url": "https://filip-a-9.github.io/keel/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Keel AI Visibility",
+    "url": "https://filip-a-9.github.io/keel/"
+  }
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap">
+<a class="brand" href="../../"><img src="../../assets/logo.svg" width="26" height="26" alt=""><span>Keel AI Visibility</span></a>
+<nav aria-label="Main"><ul><li><a href="../../offer/">Offer</a></li><li><a href="../../method/">Method</a></li><li><a href="../../case-study/">Case study</a></li><li><a href="../../articles/">Articles</a></li><li><a href="../../faq/">FAQ</a></li><li><a href="../../order/">Order</a></li></ul></nav>
+</div></header>
+<main id="main"><div class="wrap">
+<article>
+<h1>Why one ChatGPT screenshot proves nothing</h1>
+<p class="meta">Published 2026-10-30 by Keel AI Visibility. About 6 minutes.</p>
+<p>A screenshot of ChatGPT recommending your brand is persuasive. It is also nearly worthless as evidence, and the same is true of a screenshot of it leaving you out. This is not a matter of opinion. It follows from how the answers are produced and from basic statistics.</p>
+
+<h2>An answer is one draw from a spread</h2>
+<p>ChatGPT does not look up a fixed list. It generates an answer, and generation involves sampling, so the same question can produce different answers on different runs. With web search turned on there is a second source of variation: the search results themselves can differ between runs, so different pages feed the answer.</p>
+<p>So when you screenshot an answer, you have seen one draw. Imagine a coin you suspect is biased. One flip showing heads tells you nothing. The brand mention is the same: what you want to know is the underlying rate, and one run cannot reveal it.</p>
+
+<h2>Wording changes the rate too</h2>
+<p>Repeating the same question is not enough, because people do not ask the same question. In an independent study of Teamwork.com (October 2026), each theme was asked in four wordings. On the theme "which project management tool is best for managing client projects and billable hours", Teamwork.com's mention rate across the four wordings ranged from 60% to 100%. Each wording had only 10 runs behind it, so the individual figures are rough, but the spread is the point: the answer to "do they mention us?" depended on how the question was phrased.</p>
+<p>That is what wording-sensitive means. If you only tested one phrasing, you may have tested the best or the worst case without knowing it.</p>
+
+<h2>What a confidence interval adds</h2>
+<p>Suppose you ask a question 40 times and your brand appears in 20 answers. Your measured rate is 50%. The true rate is not exactly 50%; it is somewhere near it. A 95% confidence interval states how near. The Wilson interval, which suits proportions well, gives about 35% to 65% for 20 out of 40.</p>
+<p>That width, 30 points, is the honest answer to "how sure are we?". A claim like "we appear in half of answers" is really "somewhere between about a third and two thirds".</p>
+
+<h2>How many answers do you need?</h2>
+<p>The interval narrows as the number of answers grows, and it is widest when the rate is near 50%. Rough guide for the Wilson 95% interval:</p>
+<ul>
+<li>At 50%, 40 answers gives about ±15 points; 100 answers gives about ±10.</li>
+<li>At 98%, 40 answers gives an interval of about 87% to 100%.</li>
+<li>At 25%, 80 answers gives about 17% to 35%.</li>
+</ul>
+<p>The interval shrinks with the square root of the sample, so halving the width needs about four times the answers. That is why Keel's method keeps sampling until each theme's rate is within about ±10 points, rather than stopping at a fixed number. Themes near 0% or 100% settle quickly; themes in the middle take more answers. In the Teamwork.com study, five themes were settled at 40 answers each, and the resource-planning theme needed 80.</p>
+<p>One honest caveat: when you keep adding answers until the interval is narrow enough, the stated 95% becomes approximate, because the stopping rule depends on the data. The audit reports say so.</p>
+
+<h2>Comparing two numbers</h2>
+<p>Intervals also tell you whether a difference is real. In the same study, Teamwork.com was mentioned in 25% of resource-planning answers (interval 17% to 35%, n=80) and Asana in 85% (76% to 91%). The intervals are far apart, so the gap is not noise. By contrast, on the theme "best app for a small services business", Teamwork.com at 95% (83% to 99%) and monday.com at 80% (65% to 90%) have intervals that overlap, so a claim that Teamwork.com leads monday.com on that theme is not supported by the data at that sample size.</p>
+<p>This is the practical value of intervals: they stop you celebrating a difference that is probably noise, and stop you dismissing one that is large.</p>
+
+<h2>What to do instead of screenshotting</h2>
+<ol>
+<li>Write the intents your buyers ask about.</li>
+<li>Write each in several wordings.</li>
+<li>Ask each wording many times, with the assistant, settings and location fixed and recorded.</li>
+<li>Detect mentions with a written rule, not by eye.</li>
+<li>Report rates with 95% intervals, for you and for named competitors.</li>
+<li>Keep adding runs until the intervals are tight enough to decide something.</li>
+</ol>
+<p>The step-by-step version is in <a href="../../articles/how-to-check-if-chatgpt-recommends-your-brand/">how to check if ChatGPT recommends your brand</a>. The full description of how Keel does it is on the <a href="../../method/">method page</a>.</p>
+
+<h2>The multiple-comparisons trap</h2>
+<p>There is one more way screenshots mislead, and it affects careful people too. If you test twenty questions and show the three where your brand did best, you have picked the flattering draws. The same is true in reverse for a competitor's weak spots. Fixing the question list before collecting any answers, and reporting all of it, is the simple discipline that avoids this. It is why an audit agrees the themes with you in advance, and why it reports the lowest theme as prominently as the highest.</p>
+<p>Averages carry a similar risk. In the Teamwork.com study the overall mention rate was 83%, but one theme sat at 25%. Pooling hid the very result worth knowing. Report each theme with its own interval and treat any overall figure as a summary at best.</p>
+
+<h2>When a single answer is still useful</h2>
+<p>A screenshot is fine as an illustration or as a prompt for investigation: "we were left out here, let us measure whether that is typical". It becomes a problem when it is used as the finding. If a client, a boss or a vendor shows you one, ask three questions: how many runs, how many wordings, and what interval. If none of the three has an answer, it is an anecdote.</p>
+<p>The same applies to API answers versus the consumer app. Keel's audits use the API and Claude Code's web search, not the apps, and say so; what a given user sees can differ. If you want the measurement done properly, see the <a href="../../offer/">offer</a>.</p>
+<aside class="related"><h2>Keep reading</h2><ul><li><a href="../../articles/how-to-check-if-chatgpt-recommends-your-brand/">How to check if ChatGPT recommends your brand</a></li><li><a href="../../articles/what-is-a-geo-ai-visibility-audit/">What is a GEO or AI visibility audit?</a></li><li><a href="../../articles/how-ai-answers-choose-sources-to-cite/">How AI answers choose sources to cite, and how to get cited</a></li></ul><p><a class="btn" href="../../offer/">See the audit offer</a></p></aside>
+</article>
+</div></main>
+<aside class="cta" aria-label="Order"><div class="wrap"><p><strong>Founding price for the first 3 customers: Snapshot £149 (list £249) and Full £449 (list £749).</strong> In exchange, you give permission to publish an anonymised case study.</p><a class="btn" href="../../order/">Order a Snapshot (£249)</a></div></aside>
+<footer class="site"><div class="wrap">
+<nav aria-label="Footer"><ul><li><a href="../../offer/">Offer</a></li><li><a href="../../method/">Method</a></li><li><a href="../../case-study/">Case study</a></li><li><a href="../../articles/">Articles</a></li><li><a href="../../faq/">FAQ</a></li><li><a href="../../order/">Order</a></li><li><a href="../../sample-report/">Sample report</a></li><li><a href="../../terms/">Terms</a></li><li><a href="../../privacy/">Privacy</a></li></ul></nav>
+<p>Keel AI Visibility is an independent service. Contact: <a href="mailto:keel.agents@gmail.com">keel.agents@gmail.com</a>. No cookies, no tracking, no analytics.</p>
+<p>Independent. Not affiliated with OpenAI, Anthropic or any brand named on this site.</p>
+</div></footer>
+</body>
+</html>

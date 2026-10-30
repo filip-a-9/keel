@@ -1,0 +1,54 @@
+title: Check if ChatGPT recommends your brand | Keel AI Visibility
+description: A step-by-step method to test whether ChatGPT mentions your brand: choose questions, vary the wording, repeat, count mentions and add a confidence interval.
+h1: How to check if ChatGPT recommends your brand
+order: 1
+reading: About 6 minutes.
+---
+<p>The obvious way to check is to open ChatGPT, type "best [your category] tools" and see whether your name appears. That takes thirty seconds and gives you an answer you should not trust. This guide shows a method that takes longer but produces a number you can defend, and explains where each step can go wrong.</p>
+
+<h2>Step 1: write down the questions your buyers ask</h2>
+<p>Start with intents, not keywords. An intent is a thing a buyer wants to find out before choosing. For a project management tool aimed at agencies, the intents might be "best software for an agency", "alternatives to a named competitor", "tool with built-in time tracking" and "tool for resource planning". Aim for five to ten. Include at least one where a competitor is named, because many people ask for alternatives, and one that reflects a specific feature you think you are good at.</p>
+<p>Write each intent as a natural question, the way a person would type it, and not as a search keyword. "What is the best project management software for a marketing or creative agency?" will behave differently from "agency project management software".</p>
+
+<h2>Step 2: write each question four ways</h2>
+<p>Take each intent and write three or four wordings that mean the same thing. Change the vocabulary and the sentence structure, not the meaning. For example:</p>
+<ul>
+<li>What is the best project management software for a marketing or creative agency?</li>
+<li>Which project management tool should a marketing or creative agency use?</li>
+<li>What is the top project management solution for managing work at a creative agency?</li>
+<li>Which tool do marketing agencies use to manage projects?</li>
+</ul>
+<p>This matters more than it looks. In an independent study of Teamwork.com, one theme produced mention rates for the same brand that ran from 60% to 100% across its four wordings. A single wording would have told a different story from the average. Our <a href="/case-study/">case study</a> has the full figures.</p>
+
+<h2>Step 3: decide what counts as a mention</h2>
+<p>Before you collect any answers, write down the rule. A workable rule is: the answer contains the brand name, an agreed alias, or one of the brand's domains. Decide edge cases in advance:</p>
+<ul>
+<li><strong>Ordinary words.</strong> If your brand name is also an everyday word, a plain text search will either flood you with false matches or miss real ones. The Teamwork.com study chose not to count the bare word "Teamwork", and said so, which means its figures slightly undercount.</li>
+<li><strong>Misspellings and abbreviations.</strong> List the ones you care about.</li>
+<li><strong>Sentiment.</strong> A mention in a list of tools to avoid is still a mention. Decide whether you will track that separately.</li>
+</ul>
+<p>Using a fixed written rule, rather than your impression of an answer, keeps the count honest and makes it repeatable.</p>
+
+<h2>Step 4: collect many answers, not one</h2>
+<p>ChatGPT's answers vary from run to run, even for identical wording. So ask each wording repeatedly. Ten runs per wording is a sensible floor; for a theme where the rate is somewhere in the middle you need far more, as the next step explains.</p>
+<p>Think about which version of ChatGPT you are testing. The consumer app can include personalisation, memory and interface features that you cannot easily control. Using the API with web search enabled and a fixed location gives you a cleaner and more repeatable test, but it is not the same thing as what an individual user sees. State which one you used. If you test in the app by hand, use a logged-out or fresh session, record the date, and do not mix app answers with API answers in one count.</p>
+
+<h2>Step 5: count, then put an interval on it</h2>
+<p>For each intent, divide the answers that mention your brand by the total. Then calculate a 95% confidence interval. The Wilson interval is a good choice because it behaves properly near 0% and 100%, where the simpler textbook formula breaks down.</p>
+<p>A few reference points for the Wilson interval at 95%:</p>
+<ul>
+<li>20 mentions in 40 answers is 50%, with an interval from about 35% to 65%.</li>
+<li>39 in 40 is 98% (97.5% before rounding), interval about 87% to 100%.</li>
+<li>20 in 80 is 25%, interval about 17% to 35%.</li>
+</ul>
+<p>If two brands' intervals do not overlap, the gap is very unlikely to be noise. If they overlap heavily, you cannot call a winner yet. For a rate near 50%, getting the interval to within ±10 points takes roughly 100 answers; for rates near 0% or 100% it takes far fewer. <a href="/articles/why-one-chatgpt-screenshot-proves-nothing/">This article explains why</a>.</p>
+
+<h2>Step 6: check the competitors with the same questions</h2>
+<p>Your own rate on its own is hard to interpret. Is 40% good? It depends on whether the leading competitor sits at 95% or 45%. Run the identical questions and the identical detection rule for three to five competitors. This costs nothing extra, because the same answers can be searched for every brand.</p>
+
+<h2>Step 7: look at what the answers cite</h2>
+<p>If the assistant used web search, the answers usually include sources. Record which of your pages are cited and which other domains appear most. Those third-party domains are where the assistant is getting its picture of your market. In the Teamwork.com study, comparison and review sites such as smartsheet.com, wrike.com, zapier.com and capterra.com appeared in many answers. Read <a href="/articles/how-ai-answers-choose-sources-to-cite/">how AI answers choose sources</a> for what to do with that.</p>
+
+<h2>What you can and cannot conclude</h2>
+<p>With the steps above you can say: "On this set of questions, in this model, with this location, on this date, our brand was mentioned in X% of answers (interval A to B), against Y% for the leading competitor." That is a real, defensible statement. You cannot say what every user sees, you cannot say why the model answers as it does, and you cannot say the number will hold next month.</p>
+<p>Doing this by hand is possible for one brand and a handful of questions, but 10 questions in 4 wordings, 10 runs each and 5 competitors is 400 answers to collect and search. If you would rather have it done, the <a href="/offer/">Snapshot audit (£249)</a> runs this method on ChatGPT for six themes, and the <a href="/method/">method page</a> describes exactly how.</p>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://filip-a-9.github.io/keel/sitemap.xml

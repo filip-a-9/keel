@@ -1,0 +1,61 @@
+title: AI visibility for SaaS: a worked example | Keel AI
+description: A worked example of an AI visibility study for a SaaS brand: 280 ChatGPT answers, six themes, five competitors, and one real gap in resource planning. Not hype.
+h1: AI visibility for SaaS: a worked example (the Teamwork study)
+order: 5
+reading: About 7 minutes.
+---
+<p class="note">Independent study of Teamwork.com, October 2026. Not commissioned by or affiliated with Teamwork.com. This article uses it as a worked example of how to read an AI visibility audit. The headline table is on the <a href="/case-study/">case study page</a>.</p>
+<p>SaaS buyers increasingly ask an AI assistant "what is the best tool for X" before they open a search engine or a review site. If your product is not in that answer, you are missing from a shortlist you never saw being drawn. This worked example shows what an audit of a SaaS brand looks like, step by step, and what a team would do with the result.</p>
+
+<h2>The setup</h2>
+<p>Teamwork.com, a project management product aimed at client work and agencies, was tested against Asana, monday.com, ClickUp, Trello and Notion. Six question themes were chosen to reflect real buying questions:</p>
+<ul>
+<li>agency-pm: best project management software for a marketing or creative agency;</li>
+<li>asana-alternative: best alternatives to Asana for agencies;</li>
+<li>client-work: best tool for client projects and billable hours;</li>
+<li>resource-planning: best tool for resource planning and team workload management;</li>
+<li>small-team: best app for a small services business;</li>
+<li>time-tracking: software with built-in time tracking and budgeting.</li>
+</ul>
+<p>Each theme was asked in four wordings, giving 24 prompts. The ChatGPT API with web search and a US location produced 280 answers in total. Detection was deterministic matching of names, aliases and domains. One choice mattered: "Teamwork" on its own is an ordinary English word, so it was not counted. Answers that wrote only "Teamwork" were missed, so the Teamwork.com figures slightly undercount.</p>
+
+<h2>Reading the table</h2>
+<p>The first pass is to scan for the pattern. Teamwork.com's rates were 98, 98, 90, 25, 95 and 92 across the six themes. Five are high. One is not. That alone is the finding: the brand is not generally invisible, and a broad "improve our AI visibility" project would be badly targeted. The problem is one theme.</p>
+
+<h3>The gap is not noise</h3>
+<p>On resource planning, Teamwork.com was mentioned in 25% of 80 answers (95% interval 17% to 35%). Asana was at 85% (76% to 91%), monday.com at 68% (57% to 77%). The intervals for Teamwork.com and Asana do not come near each other, so this is a real difference in the sample, not a fluke of a small run. That theme needed 80 answers, twice as many as the others, because its mid-range rates took longer to pin down.</p>
+
+<h3>Competitors differ by theme</h3>
+<p>Looking across brands shows how uneven the landscape is. On "client projects and billable hours" Teamwork.com (90%) and ClickUp (98%) led while monday.com (22%) was low. On time tracking, Teamwork.com at 92% was ahead of Asana at 45% and monday.com at 60%. On "alternatives to Asana", Notion appeared in 60% of answers while Trello was at 20%. A brand's visibility is a set of positions, not a single number.</p>
+
+<h3>Wording sensitivity</h3>
+<p>The billable-hours theme showed Teamwork.com's rate running from 60% to 100% across its four wordings. A team that tested one phrasing might have concluded they were weak, or invulnerable. This is why the audit reports the range across wordings alongside the pooled rate.</p>
+
+<h2>What the sources say</h2>
+<p>Pages on teamwork.com were cited in 135 of 280 answers (48%). The most-cited were its agencies page (29), pricing page (27) and a support article on standard project budgets (20). On the weak theme, the brand's own resource-planning blog post was cited in 5 answers and its workload-planner support article in 1.</p>
+<p>The third-party domains cited most often were smartsheet.com (76 answers), wrike.com (54), zapier.com (32), float.com (29), getharvest.com (29) and capterra.com (28). These counts are across all six themes, not only resource planning, so they do not show which sources fed the weak theme; that would need a per-theme cut of the same answers. <a href="/articles/how-ai-answers-choose-sources-to-cite/">How to read citations</a> goes through the method.</p>
+
+<h2>What a team could do with this</h2>
+<ol>
+<li><strong>Prioritise the one theme.</strong> Decide whether resource planning matters commercially. If it does, it is the place to spend effort. If the company does not want to compete there, the 25% is a conscious trade-off.</li>
+<li><strong>Review the pages that exist.</strong> Is there a clear, specific page about workload and capacity planning, written to answer the questions in the prompts? The study found few citations of the existing pages on this topic.</li>
+<li><strong>Check third-party presence.</strong> For the domains cited on that theme, check listings and comparison articles.</li>
+<li><strong>Re-measure.</strong> Run the same questions again after the work and compare intervals.</li>
+</ol>
+<p>Nothing here promises a result. The point of the audit is that the effort goes to one theme with evidence behind it.</p>
+
+<h2>Why the example matters beyond one company</h2>
+<p>Teamwork.com is a mature, well-known product, and it still has a theme where the assistant mostly names other tools. Smaller SaaS companies should expect larger gaps, not smaller ones. The useful lesson is not that Teamwork.com has a problem; it is that an average hides it. Overall, the study found Teamwork.com mentioned in 83% of answers, a figure that sounds reassuring and conceals a 25% theme. The report itself flags that the overall interval (59% to 96%) is unreliable with only six themes, which is a good reason to read the per-theme rates first and treat any single headline number with suspicion.</p>
+<p>A second lesson is cost and effort. The whole study, 280 answers with web search, cost about $4 in API charges. The expensive parts of an audit are choosing sensible questions and reading the result carefully, not collecting the answers.</p>
+
+<h2>Limits of the example</h2>
+<ul>
+<li>One model (gpt-5.6-luna), one location (US), one day.</li>
+<li>The ChatGPT API with web search, not the consumer app. An individual user's answers may differ.</li>
+<li>Only whether a brand is mentioned, not where, not how favourably.</li>
+<li>Intervals are approximate because sampling continued until the target was met.</li>
+<li>A different set of themes or competitors could give a different picture.</li>
+</ul>
+
+<h2>Doing this for your product</h2>
+<p>The same structure applies to any SaaS brand: pick the buying questions, write wordings, sample until the intervals are tight, compare against named competitors, read the cited domains. The Snapshot audit (£249) covers six themes on ChatGPT. The Full audit (£749) adds Claude, 10 to 15 themes, and written findings and actions. Both are on the <a href="/offer/">offer page</a>, and you can start with the <a href="/order/">8-question intake</a>.</p>

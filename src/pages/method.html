@@ -1,0 +1,48 @@
+title: Method: how Keel measures AI visibility | Keel AI Visibility
+description: How Keel measures AI visibility: repeated questions in several wordings, ChatGPT API and Claude Code search, exact name matching and Wilson 95% intervals.
+---
+<h1>Method</h1>
+<p class="lede">The audit is a measurement, not a prediction and not a trick. This page says exactly what is done and where it falls short.</p>
+
+<h2>1. Question themes and wordings</h2>
+<p>Each audit starts from question themes: the things a buyer might ask an AI assistant before choosing, such as "which tool is best for resource planning". Each theme is written in several wordings, because the same intent phrased two ways can produce different answers. You approve the themes before any answers are collected.</p>
+
+<h2>2. Collecting answers</h2>
+<ul>
+<li><strong>ChatGPT:</strong> each wording is asked repeatedly through the OpenAI API with web search enabled and a stated location.</li>
+<li><strong>Claude (Full audit only):</strong> the same questions are asked repeatedly through Claude, using Claude Code's web search.</li>
+</ul>
+<div class="note"><strong>This is not the consumer app.</strong> Answers come from the API and from Claude Code. They are not taken from the ChatGPT app or claude.ai and may differ from what an individual user sees, for example because of personalisation, memory or interface differences. A spot-check in the app can be a useful sanity check, and the audit does not replace one.</div>
+
+<h2>3. Detecting mentions</h2>
+<p>Detection is deterministic text matching. An answer counts as mentioning a brand when it contains the brand's name, an agreed alias or one of its domains. No language model decides whether a brand was mentioned. The consequences:</p>
+<ul>
+<li>It is repeatable and you can check any result by searching the answer text.</li>
+<li>It misses misspelt names and any name not on the agreed list. That is why the intake asks for aliases.</li>
+<li>Ordinary English words need a decision. In the Teamwork.com study the bare word "Teamwork" was not counted, so the figures slightly undercount.</li>
+<li>Only whether a brand is mentioned is measured. A brand named first counts the same as one named last.</li>
+</ul>
+
+<h2>4. Mention rates and confidence intervals</h2>
+<p>For each theme the rate is the share of answers that mention the brand. Because the answers are a sample, each rate comes with a 95% confidence interval calculated with the Wilson method, which behaves sensibly for rates near 0% and 100%. For instance, 39 mentions in 40 answers is 98%, with an interval of roughly 87% to 100%. <a href="/articles/why-one-chatgpt-screenshot-proves-nothing/">Why this matters</a>.</p>
+
+<h2>5. Sampling until the result is stable</h2>
+<p>Sampling does not stop at a fixed number. It continues until each theme's rate is within about ±10 percentage points. Themes where the rate is near 0% or 100% settle quickly. Themes in the middle need more answers. In the Teamwork.com study this stopping rule ran from at least 10 runs per wording up to a cap of 100. Because runs were added until the target was met, the stated intervals are approximate.</p>
+
+<h2>6. What the report covers</h2>
+<ul>
+<li>Mention rates with 95% intervals, for your brand and the competitors you name.</li>
+<li><strong>Cited pages:</strong> which pages of your site the answers cited, and how often.</li>
+<li><strong>Domains to get coverage on:</strong> the third-party sites cited most often, so you know where mentions would matter. See <a href="/articles/how-ai-answers-choose-sources-to-cite/">how AI answers choose sources</a>.</li>
+<li><strong>Wording sensitivity:</strong> which themes change a lot when the wording changes.</li>
+<li>Full audit: findings and recommended actions.</li>
+</ul>
+
+<h2>7. What it cannot tell you</h2>
+<ul>
+<li>It does not guarantee or improve rankings. It shows where you stand today.</li>
+<li>It is a snapshot. Models and the web change, and rates can move.</li>
+<li>It does not measure traffic. Visits from AI assistants are a separate question answered by your own analytics.</li>
+<li>Findings are correlations in what the assistants cited, not proof of what causes a mention.</li>
+</ul>
+<p>See it applied in the <a href="/case-study/">Teamwork.com case study</a>, or read the full <a href="/sample-report/">sample report</a>. To start, <a href="/order/">order an audit</a>.</p>
